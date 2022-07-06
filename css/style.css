@@ -6,17 +6,51 @@
 
 body {
     font-family: sans-serif;
-}
-
-main {
     background-color: #083b4c;
 }
 
-#item-container {
-    display: flex;
-    flex-wrap: wrap;
+main {
+    padding: 30px 15px;
+}
+
+#data-container {
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 45px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+input {
+    text-align: center;
+    width: 90px;
+    padding: 15px;
+}
+
+button {
+    display: inline-block;
+}
+
+
+
+
+
+#item-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
@@ -24,6 +58,10 @@ main {
     height: 80px;
     padding: 10px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .bg-blue {

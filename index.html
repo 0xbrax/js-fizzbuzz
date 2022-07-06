@@ -11,11 +11,17 @@
 
     <body>
         <main>
-            <section>
-                <label for="data-in">Quanti quadratini vuoi?</label>
-                <input id="data-in" type="text" name="data-in" placeholder="Scrivi un numero">
+            <section id="data-container">
+                <h1>FizzBuzz DOM</h1>
 
-                <button id="btn-gen">GO!</button>
+                <label for="data-in">Quanti quadratini vuoi?</label>
+                <input id="data-in" type="text" name="data-in" placeholder="Numero">
+
+                <div>
+                    <button id="btn-add">Add</button>
+                    <button id="btn-gen">GO!</button>
+                    <button id="btn-del">reset</button>
+                </div>
             </section>
 
             <section id="item-container">
