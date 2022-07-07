@@ -7,6 +7,7 @@
         <title>FizzBuzz</title>
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     </head>
 
     <body>
@@ -17,10 +18,24 @@
                 <label for="data-in">Quanti quadratini vuoi?</label>
                 <input id="data-in" type="text" name="data-in" placeholder="Numero">
 
-                <div>
-                    <button id="btn-add">Add</button>
-                    <button id="btn-gen">GO!</button>
-                    <button id="btn-del">reset</button>
+                <div class="btn-container">
+                    <div id="btn-add" class="btn-noShow">
+                        <div>
+                            Add
+                        </div>
+                    </div>  
+
+                    <div id="btn-gen">
+                        <div>
+                            GO!
+                        </div>
+                    </div>
+
+                    <div id="btn-del" class="btn-noShow">
+                        <div>
+                            reset
+                        </div>
+                    </div>  
                 </div>
             </section>
 

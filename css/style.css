@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: #083b4c;
+    background-color: #4f2659;
 }
 
 main {
@@ -28,22 +28,125 @@ h1 {
 
 label {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 35px;
+    margin-top: 15px;
 }
 
 input {
     text-align: center;
-    width: 90px;
-    padding: 15px;
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+    border: 2px solid #808080;
+    border-radius: 5px;
 }
 
-button {
-    display: inline-block;
+input:focus {
+    outline: 2px solid #00ff4c;
+    outline-offset: 0px;
 }
 
+.btn-container {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 30px;
+}
 
+#btn-add {
+	position: relative;
+	width: 175px;
+	height: 175px;
+	border-radius: 50%/50px;
+    background-color: #d6d603;
+}
 
+#btn-add > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 175px;
+	height: 125px;
+	border-radius: 50%/50px;
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff00;
+}
 
+#btn-add:active {
+    height: 125px;
+}
+
+#btn-gen {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%/50px;
+    background-color: #00ca3d;
+    margin: 0 30px;
+}
+
+#btn-gen > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 150px;
+	border-radius: 50%/50px;
+    color: #000000;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ff4c;
+}
+
+#btn-gen:active {
+    height: 150px;
+}
+
+#btn-del {
+	position: relative;
+	width: 175px;
+	height: 175px;
+	border-radius: 50%/50px;
+    background-color: #d40000;
+}
+
+#btn-del > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 175px;
+	height: 125px;
+	border-radius: 50%/50px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+}
+
+#btn-del:active {
+    height: 125px;
+}
+
+.btn-noShow {
+    display: none;
+}
 
 #item-container {
     max-width: 1000px;
@@ -65,11 +168,11 @@ button {
 }
 
 .bg-blue {
-    background-color: #1389b2;
+    background-color: #0cc6d3;
 }
 
 .bg-red {
-    background-color: #f0466f;
+    background-color: #f36a48;
 }
 
 .bg-yellow {

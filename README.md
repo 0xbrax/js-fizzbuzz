@@ -14,12 +14,11 @@ ALTRIMENTI
     Scrivi il contatore
 
 ********
+
 INFO: 
 - Usare "append" invece di "innerHtml".
 - Aggiungere bottone per selezionare numero elementi da generare.
 
-Refactoring:
-//items.innerHTML = "<div class="box  +  + ">" + contenuto + "</div>"
 ********
 
 FINE programma.
