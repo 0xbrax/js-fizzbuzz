@@ -3,6 +3,7 @@ let data = document.getElementById('data-in');
 const btnGen = document.getElementById('btn-gen');
 let btnAdd = document.getElementById('btn-add');
 let btnDel = document.getElementById('btn-del');
+let main = document.querySelector('main');
 
 btnGen.addEventListener('click', function() {
     if (data.value == '' || isNaN(data.value) || data.value % 1 != 0) {
@@ -43,15 +44,17 @@ btnAdd.addEventListener('click', function() {
     } else {
         let box = document.querySelectorAll('.box');
         for (let i = 1 + (box.length); i <= (box.length + parseInt(data.value)); i++) {
+            let contentBox;
             if (i % 15 == 0) {
-                items.innerHTML += `<div class="box bg-red">${i} fizzbuzz</div>`;
+                contentBox = `<div class="box bg-red">${i} fizzbuzz</div>`;
             } else if (i % 5 == 0) {
-                items.innerHTML += `<div class="box bg-yellow">${i} buzz</div>`;
+                contentBox = `<div class="box bg-yellow">${i} buzz</div>`;
             } else if (i % 3 == 0) {
-                items.innerHTML += `<div class="box bg-green">${i} fizz</div>`;
+                contentBox = `<div class="box bg-green">${i} fizz</div>`;
             } else {
-                items.innerHTML += `<div class="box bg-blue">${(i)}</div>`;
+                contentBox = `<div class="box bg-blue">${(i)}</div>`;
             }
+            items.innerHTML += contentBox;
         }
     }
 });
@@ -59,6 +62,7 @@ btnAdd.addEventListener('click', function() {
 btnDel.addEventListener('click', function() {
     items.innerHTML = '';
     data.value = '';
+    main.style.overflowY = 'hidden';
 
     btnAdd.classList.remove('animate__bounceInDown');
     btnAdd.classList.add('animate__bounceOutDown');
